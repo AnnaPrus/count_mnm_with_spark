@@ -38,9 +38,10 @@ Reload profile with source ~/.zshrc
 ```bash
 pip install pyspark
 ```
-
-
-
+5. Go to the reposictory where the project is located and run the python script 
+```python
+spark-submit mnmcount.py data/dataset.csv
+```
 
 
 
