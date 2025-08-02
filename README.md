@@ -43,6 +43,4 @@ pip install pyspark
 spark-submit mnmcount.py data/dataset.csv
 ```
 
-<details> <summary>📁 Project Structure (click to expand)
-
- mnmcount/ ├── data/ # Your CSV files (e.g., mnm_data_2025.csv) ├── mnmcount/ │ ├── __init__.py │ ├── processor.py # Main logic (data loading, aggregation) │ └── cli.py # Command-line interface ├── tests/ │ ├── __init__.py │ └── test_processor.py # Unit tests for processor functions ├── requirements.txt # Python dependencies └── spark_submit_entry.py # Optional: Entry point for spark-submit </summary>
+<details> <summary>📁 Project Structure (click to expand) mnmcount/ ├── data/ # Your CSV files (e.g., mnm_data_2025.csv) ├── mnmcount/ │ ├── __init__.py │ ├── processor.py # Main logic (data loading, aggregation) │ └── cli.py # Command-line interface ├── tests/ │ ├── __init__.py │ └── test_processor.py # Unit tests for processor functions ├── requirements.txt # Python dependencies └── spark_submit_entry.py # Optional: Entry point for spark-submit </summary>
