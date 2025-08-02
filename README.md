@@ -3,7 +3,23 @@
 This repo shows how to set up Apache Spark locally and run a Python script using PySpark to read and manipulate CSV data.
 
 ---
+### 📁 Project Structure
 
+```text
+mnmcount/
+├── data/                     # the CSV file 
+├── mnmcount/                 
+│   ├── __init__.py
+│   ├── processor.py          # Main logic (data loading, aggregation)
+│   └── cli.py                # Command-line interface
+├── tests/
+│   ├── __init__.py
+│   └── test_processor.py     # Unit tests for processor functions
+├── requirements.txt          # Python dependencies
+└── spark_submit_entry.py     # Entry point for spark-submit
+
+```
+---
 ## Prerequisites
 
 - Java (version 8 or 17)
@@ -43,17 +59,4 @@ pip install pyspark
 spark-submit mnmcount.py data/dataset.csv
 ```
 
-### 📁 Project Structure
 
-```text
-mnmcount/
-├── data/                     # Your CSV files (e.g., mnm_data_2025.csv)
-├── mnmcount/                 
-│   ├── __init__.py
-│   ├── processor.py          # Main logic (data loading, aggregation)
-│   └── cli.py                # Command-line interface
-├── tests/
-│   ├── __init__.py
-│   └── test_processor.py     # Unit tests for processor functions
-├── requirements.txt          # Python dependencies
-└── spark_submit_entry.py     # Optional: Entry point for spark-submit
