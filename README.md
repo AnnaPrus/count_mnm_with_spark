@@ -29,7 +29,7 @@ mnmcount/
 
 ---
 
-## Setup & Usage
+## Setup
 
 1. **Install Java**  
 Make sure Java is installed and available in your terminal:
@@ -54,9 +54,21 @@ Reload profile with source ~/.zshrc
 ```bash
 pip install pyspark
 ```
-5. Go to the reposictory where the project is located and run the python script 
+
+## Usage
+
+1. Go to the reposictory where the project is located and run the python script 
 ```python
-spark-submit mnmcount.py data/dataset.csv
+spark-submit mnmcount/cli.py data/dataset.csv
+```
+2. Run unit tests using
+```python
+python -m unittest discover tests
+```
+3. Or use pytest for better output:
+```python
+pip install pytest
+pytest tests/
 ```
 
 
